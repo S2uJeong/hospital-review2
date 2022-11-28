@@ -1,0 +1,16 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
+  port: 8081
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hospital-review
+    username: root
+    password: 1234
+
