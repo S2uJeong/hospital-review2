@@ -22,6 +22,6 @@ public class UserController {
     public Response<UserJoinResponse> join(@RequestBody UserJoinRequest userJoinRequest) {
 
         UserDto userDto = userService.join(userJoinRequest);
-        return Response.success(new UserJoinResponse());
+        return Response.success(new UserJoinResponse(userDto.getUserName(), userDto.getEmail()));
     }
 }
